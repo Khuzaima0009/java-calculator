@@ -14,6 +14,9 @@ public class ArithmeticOperations {
         double difference = num1 - num2;
         double product = num1 * num2;
         double quotient = (num2 != 0) ? (num1 / num2) : Double.NaN;
+        double modulus = num1 % num2;
+        double exponentiation = Math.pow(num1, num2);
+        
         
         System.out.println("Addition: " + sum);
         System.out.println("Subtraction: " + difference);
@@ -21,9 +24,12 @@ public class ArithmeticOperations {
         
         if (num2 != 0) {
             System.out.println("Division: " + quotient);
+            System.out.println("Modulus: " + modulus);
         } else {
             System.out.println("Division by zero is not allowed.");
         }
+        
+        System.out.println("Exponentiation: " + exponentiation);
         
         scanner.close();
     }
